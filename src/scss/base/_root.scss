@@ -1,0 +1,13 @@
+@use '../abstractions' as *;
+
+:root{
+    font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $font-family;
+    
+    @include getFW(regular);
+}
