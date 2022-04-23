@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use 'fonts' as *;
+@use 'breakpoints' as *;
+
+@mixin getFW($key){
+    font-weight: map.get($font-weight, $key);
+};
+
+@mixin easeTransition($time: .25S) {
+    transition: all $time ease-in-out;
+}
+
+@mixin media($key){
+    $size: map.get($breakpoints, $key);
+    
+    @media (max-width: $size) {
+        @content;
+    }
+}
