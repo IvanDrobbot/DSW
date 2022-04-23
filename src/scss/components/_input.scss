@@ -1,0 +1,7 @@
+@use '../abstractions' as *;
+
+.input{
+    padding: 1em 2em;
+    outline: .2em solid darken($secondary-clr, 20%);
+    border-radius: 2em;
+}

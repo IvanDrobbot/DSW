@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline; 
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {  
+    -webkit-appearance: button;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+button {
+    background-color:transparent;
+     color: inherit;
+    border-width:0;
+    cursor:pointer;
+}

@@ -1,0 +1,19 @@
+@use '../abstractions' as *;
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+        margin-top: 2em;
+    }
+    .contact__btn{
+        border-radius: 2em;
+
+        &:hover, 
+        &:focus{
+            transform: scale(1);
+        }
+    }
+}

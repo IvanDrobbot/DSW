@@ -1,0 +1,24 @@
+@use '../abstractions' as *;
+
+.header{
+    background: url(../img/shoe-1.webp),
+    radial-gradient(darken($secondary-clr, 50%), $primary-clr);
+    block-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding: 18em 0;
+    
+    &__container{
+        text-align: center;
+        & > * + *{
+            margin-top: 1em;
+        }
+    }
+
+    @supports (background-blend-mode: multiply){
+        background-blend-mode: multiply;
+    }
+    
+}

@@ -1,0 +1,30 @@
+@use '../abstractions' as *;
+
+
+.card{
+    background: radial-gradient(red, orange);
+    border-radius: 2em;
+    padding: 2em;
+    flex-basis: 30%;
+    text-align: center;
+
+    @include easeTransition;
+
+    &__content{
+       width: 100%;
+       object-fit: cover;
+    }
+    &__btn{
+        margin-top: 1em;
+    }
+    &__btn:hover, 
+    &__btn:focus{
+        transform: scale(0.95);
+    }
+
+    &:hover,
+    &:focus{
+        transform: scale(0.95);
+    }
+
+}

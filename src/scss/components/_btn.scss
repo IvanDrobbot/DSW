@@ -1,0 +1,17 @@
+@use '../abstractions' as *;
+
+.btn{
+    display: inline-block;
+    padding: .7em 2em;
+    background-color: $accent-clr;
+    border-radius: .5em;
+    color: $secondary-clr;
+    
+    @include easeTransition;
+    
+    &:hover, 
+    &:focus{
+        transform: scale(1.05);
+        opacity: .9;
+    }
+}
